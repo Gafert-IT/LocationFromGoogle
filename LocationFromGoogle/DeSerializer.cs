@@ -1,9 +1,7 @@
-﻿using System;
+﻿using LocationFromGoogle.Classes;
+using System.IO;
+using Newtonsoft.Json;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using LocationFromGoogle.Classes;
 
 namespace LocationFromGoogle
 {

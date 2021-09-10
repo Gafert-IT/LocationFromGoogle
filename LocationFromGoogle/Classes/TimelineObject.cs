@@ -11,7 +11,13 @@ namespace LocationFromGoogle.Classes
         private ActivitySegment? activitySegment;
         private PlaceVisit? placeVisit;
 
+
         public ActivitySegment? ActivitySegment { get => activitySegment; set => activitySegment = value; }
         public PlaceVisit? PlaceVisit { get => placeVisit; set => placeVisit = value; }
+        public TimelineObject(ActivitySegment? activitySegment, PlaceVisit? placeVisit)
+        {
+            ActivitySegment = activitySegment;
+            PlaceVisit = placeVisit;
+        }
     }
 }

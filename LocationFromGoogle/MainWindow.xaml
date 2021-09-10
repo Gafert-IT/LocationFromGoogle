@@ -4,51 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LocationFromGoogle"
+        xmlns:cl="clr-namespace:LocationFromGoogle.Classes"
         mc:Ignorable="d"
         
         Height="450" Width="800" MaxHeight="600" MaxWidth="1000" MinHeight="400" MinWidth="600">
+    
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="150"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-        </Grid.RowDefinitions>
-
-        <DataGrid Name="DTG_Locations" Grid.Column="0" Margin="2"/>
-        <StackPanel VerticalAlignment="Top" Grid.Column="1">
-
-            <GroupBox Header="Hersteller">
-                <ComboBox Name="CBX_Hersteller" Margin="2"/>
-            </GroupBox>
-
-            <GroupBox Header="Farbe">
-                <ComboBox Name="CBX_Farbe" Margin="2"/>
-            </GroupBox>
-
-            <GroupBox Header="Verfügbarkeit">
-                <CheckBox Name="CHB_Verfuegbarkeit" Content="Ist Verfügbar" Margin="2" HorizontalAlignment="Center" IsChecked="{x:Null}"  IsThreeState="True"/>
-            </GroupBox>
-
-            <GroupBox Header="Hubraum">
-                <StackPanel>
-                    <DockPanel>
-                        <Label Content="Von:" Width="50"/>
-                        <TextBox Name="TXT_HubraumVon" Text="0" Margin="2" DockPanel.Dock="Right"  Focusable="true"/>
-                    </DockPanel>
-                    <DockPanel>
-                        <Label Content="Bis:" Width="50"/>
-                        <TextBox Name="TXT_HubraumBis" Text="10000" Margin="2" DockPanel.Dock="Right" Focusable="true"/>
-                    </DockPanel>
-                </StackPanel>
-            </GroupBox>
-        </StackPanel>
-
-        <StackPanel Grid.Column="1" VerticalAlignment="Bottom">
-
-            <Button Name="BTN_Filtern" Content="Filtern" Margin="2"/>
-            <Button Name="BTN_HubraumReset" Content="Filter löschen" Margin="2"/>
-        </StackPanel>
+        
     </Grid>
 </Window>
