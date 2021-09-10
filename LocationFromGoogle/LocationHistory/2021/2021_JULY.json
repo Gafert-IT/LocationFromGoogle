@@ -1,0 +1,21 @@
+{
+  "timelineObjects" : [ {
+    "placeVisit" : {
+      "location" : {
+        "latitudeE7" : 465867199,
+        "longitudeE7" : 112532484,
+        "placeId" : "ChIJFzX9eZiigkcRXLlhrPxHbGU",
+        "address" : "Via Meltina, 44\n39010 Meltina BZ\nItalia",
+        "name" : "Bar Pizzeria Friedheim",
+        "locationConfidence" : 100.0
+      },
+      "duration" : {
+        "startTimestampMs" : "1626536431000",
+        "endTimestampMs" : "1626536491000"
+      },
+      "placeConfidence" : "USER_CONFIRMED",
+      "visitConfidence" : 100,
+      "editConfirmationStatus" : "CONFIRMED"
+    }
+  } ]
+}

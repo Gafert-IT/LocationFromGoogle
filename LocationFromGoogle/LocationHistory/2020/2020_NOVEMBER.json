@@ -1,0 +1,1083 @@
+{
+  "timelineObjects" : [ {
+    "activitySegment" : {
+      "startLocation" : {
+        "latitudeE7" : 506342094,
+        "longitudeE7" : 114758038,
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        }
+      },
+      "endLocation" : {
+        "latitudeE7" : 506346560,
+        "longitudeE7" : 114900730,
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        }
+      },
+      "duration" : {
+        "startTimestampMs" : "1604220747000",
+        "endTimestampMs" : "1604220885000"
+      },
+      "distance" : 1201,
+      "activityType" : "IN_PASSENGER_VEHICLE",
+      "confidence" : "HIGH",
+      "activities" : [ {
+        "activityType" : "IN_PASSENGER_VEHICLE",
+        "probability" : 94.66658234596252
+      }, {
+        "activityType" : "WALKING",
+        "probability" : 3.7566740065813065
+      }, {
+        "activityType" : "STILL",
+        "probability" : 0.7009642198681831
+      }, {
+        "activityType" : "CYCLING",
+        "probability" : 0.36758396308869123
+      }, {
+        "activityType" : "MOTORCYCLING",
+        "probability" : 0.3388689598068595
+      }, {
+        "activityType" : "RUNNING",
+        "probability" : 0.060140882851555943
+      }, {
+        "activityType" : "IN_BUS",
+        "probability" : 0.038996091461740434
+      }, {
+        "activityType" : "IN_FERRY",
+        "probability" : 0.03047991485800594
+      }, {
+        "activityType" : "SKIING",
+        "probability" : 0.01889314007712528
+      }, {
+        "activityType" : "FLYING",
+        "probability" : 0.015368971799034625
+      }, {
+        "activityType" : "IN_TRAIN",
+        "probability" : 0.002544771268730983
+      }, {
+        "activityType" : "SAILING",
+        "probability" : 0.0021756459318567067
+      }, {
+        "activityType" : "IN_TRAM",
+        "probability" : 4.1258408600697294E-4
+      }, {
+        "activityType" : "IN_SUBWAY",
+        "probability" : 2.956873686343897E-4
+      }, {
+        "activityType" : "IN_VEHICLE",
+        "probability" : 2.1390242466168274E-5
+      } ],
+      "waypointPath" : {
+        "waypoints" : [ {
+          "latE7" : 506342086,
+          "lngE7" : 114758119
+        }, {
+          "latE7" : 506351432,
+          "lngE7" : 114755821
+        }, {
+          "latE7" : 506359519,
+          "lngE7" : 114759435
+        }, {
+          "latE7" : 506355705,
+          "lngE7" : 114774293
+        }, {
+          "latE7" : 506346511,
+          "lngE7" : 114900732
+        } ]
+      },
+      "simplifiedRawPath" : {
+        "points" : [ {
+          "latE7" : 506359482,
+          "lngE7" : 114759398,
+          "timestampMs" : "1604220780000",
+          "accuracyMeters" : 3
+        } ]
+      },
+      "parkingEvent" : {
+        "timestampMs" : "1604221032564",
+        "location" : {
+          "latitudeE7" : 506344054,
+          "longitudeE7" : 114902919,
+          "accuracyMetres" : 102
+        }
+      }
+    }
+  }, {
+    "placeVisit" : {
+      "location" : {
+        "latitudeE7" : 506332038,
+        "longitudeE7" : 114922838,
+        "placeId" : "ChIJK-2LBMpQoUcRNJxq3TFBDmU",
+        "address" : "Preßwitzer Str. 24\n07333 Unterwellenborn\nDeutschland",
+        "name" : "Güldene Gabel",
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        },
+        "locationConfidence" : 37.323772
+      },
+      "duration" : {
+        "startTimestampMs" : "1604220885000",
+        "endTimestampMs" : "1604222244017"
+      },
+      "placeConfidence" : "LOW_CONFIDENCE",
+      "centerLatE7" : 506346560,
+      "centerLngE7" : 114900730,
+      "visitConfidence" : 75,
+      "otherCandidateLocations" : [ {
+        "latitudeE7" : 505595207,
+        "longitudeE7" : 116960127,
+        "placeId" : "ChIJm78Z2IZEoUcR1FSHPNUVgq0",
+        "locationConfidence" : 9.754913
+      }, {
+        "latitudeE7" : 506325815,
+        "longitudeE7" : 114927969,
+        "placeId" : "ChIJL4HYpI1RoUcRbbhfyypb2V0",
+        "locationConfidence" : 7.6684937
+      }, {
+        "latitudeE7" : 506346000,
+        "longitudeE7" : 114901900,
+        "placeId" : "ChIJsalDWMpQoUcRegu96MvLox4",
+        "locationConfidence" : 6.944137
+      }, {
+        "latitudeE7" : 506349258,
+        "longitudeE7" : 114898982,
+        "placeId" : "ChIJ8fig-cpQoUcR6H3cu_6hnwE",
+        "locationConfidence" : 2.582039
+      }, {
+        "latitudeE7" : 506330353,
+        "longitudeE7" : 114938394,
+        "placeId" : "ChIJXR1E6cNRoUcRMlKu-AAcTGQ",
+        "locationConfidence" : 1.4964515
+      }, {
+        "latitudeE7" : 506331334,
+        "longitudeE7" : 114931120,
+        "placeId" : "ChIJhb-M98lQoUcRMgFGyN2i3_Y",
+        "locationConfidence" : 1.4864374
+      }, {
+        "latitudeE7" : 506316251,
+        "longitudeE7" : 114946546,
+        "placeId" : "ChIJ15soO7ZQoUcRh5aZCAJJc0o",
+        "locationConfidence" : 1.3429352
+      }, {
+        "latitudeE7" : 506346500,
+        "longitudeE7" : 114896800,
+        "placeId" : "ChIJR6gx98pQoUcRA82p7RJvpVE",
+        "locationConfidence" : 1.3277582
+      }, {
+        "latitudeE7" : 506345700,
+        "longitudeE7" : 114950100,
+        "placeId" : "ChIJ2fW0nslQoUcRVNJit9t9mjU",
+        "locationConfidence" : 0.8685885
+      } ],
+      "editConfirmationStatus" : "NOT_CONFIRMED"
+    }
+  }, {
+    "activitySegment" : {
+      "startLocation" : {
+        "latitudeE7" : 506323479,
+        "longitudeE7" : 114920890,
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        }
+      },
+      "endLocation" : {
+        "latitudeE7" : 506335628,
+        "longitudeE7" : 114761261,
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        }
+      },
+      "duration" : {
+        "startTimestampMs" : "1604222244017",
+        "endTimestampMs" : "1604222975592"
+      },
+      "distance" : 1341,
+      "activityType" : "IN_PASSENGER_VEHICLE",
+      "confidence" : "HIGH",
+      "activities" : [ {
+        "activityType" : "IN_PASSENGER_VEHICLE",
+        "probability" : 94.22470927238464
+      }, {
+        "activityType" : "WALKING",
+        "probability" : 2.542848140001297
+      }, {
+        "activityType" : "STILL",
+        "probability" : 2.528109960258007
+      }, {
+        "activityType" : "CYCLING",
+        "probability" : 0.2818455919623375
+      }, {
+        "activityType" : "MOTORCYCLING",
+        "probability" : 0.17231531674042344
+      }, {
+        "activityType" : "IN_BUS",
+        "probability" : 0.08174839895218611
+      }, {
+        "activityType" : "IN_FERRY",
+        "probability" : 0.06341320695355535
+      }, {
+        "activityType" : "RUNNING",
+        "probability" : 0.03565874649211764
+      }, {
+        "activityType" : "FLYING",
+        "probability" : 0.02212288527516648
+      }, {
+        "activityType" : "IN_TRAIN",
+        "probability" : 0.020705896895378828
+      }, {
+        "activityType" : "SKIING",
+        "probability" : 0.019130892178509384
+      }, {
+        "activityType" : "SAILING",
+        "probability" : 0.0036307166737969965
+      }, {
+        "activityType" : "IN_TRAM",
+        "probability" : 0.0021850180928595364
+      }, {
+        "activityType" : "IN_SUBWAY",
+        "probability" : 0.0015312782124965452
+      }, {
+        "activityType" : "IN_VEHICLE",
+        "probability" : 4.319604443026037E-5
+      } ],
+      "simplifiedRawPath" : {
+        "points" : [ {
+          "latE7" : 506341659,
+          "lngE7" : 114920470,
+          "timestampMs" : "1604222365663",
+          "accuracyMeters" : 150
+        } ]
+      },
+      "parkingEvent" : {
+        "timestampMs" : "1604222855517",
+        "location" : {
+          "latitudeE7" : 506337422,
+          "longitudeE7" : 114791929,
+          "accuracyMetres" : 39
+        }
+      }
+    }
+  }, {
+    "placeVisit" : {
+      "location" : {
+        "latitudeE7" : 506334844,
+        "longitudeE7" : 114761707,
+        "placeId" : "ChIJ5-3Xz0lXoUcRPqZf9jdSfPw",
+        "address" : "Trebe 3\n07333 Unterwellenborn\nDeutschland",
+        "name" : "Trebe 3",
+        "semanticType" : "TYPE_SEARCHED_ADDRESS",
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        },
+        "locationConfidence" : 97.26973
+      },
+      "duration" : {
+        "startTimestampMs" : "1604222975592",
+        "endTimestampMs" : "1604227274288"
+      },
+      "placeConfidence" : "HIGH_CONFIDENCE",
+      "centerLatE7" : 506335733,
+      "centerLngE7" : 114761194,
+      "visitConfidence" : 86,
+      "otherCandidateLocations" : [ {
+        "latitudeE7" : 506333591,
+        "longitudeE7" : 114763357,
+        "placeId" : "ChIJz5FjxUlXoUcRvPogt0TQqhA",
+        "locationConfidence" : 0.20402843
+      }, {
+        "latitudeE7" : 506353780,
+        "longitudeE7" : 114751840,
+        "placeId" : "ChIJQwRTvzdXoUcR_KjWtp1pr-k",
+        "locationConfidence" : 0.12920043
+      }, {
+        "latitudeE7" : 505595207,
+        "longitudeE7" : 116960127,
+        "placeId" : "ChIJm78Z2IZEoUcR1FSHPNUVgq0",
+        "locationConfidence" : 0.06771565
+      }, {
+        "latitudeE7" : 506332201,
+        "longitudeE7" : 114772646,
+        "placeId" : "ChIJaZgzSjZXoUcRk8caWAyrTec",
+        "locationConfidence" : 0.043317966
+      } ],
+      "editConfirmationStatus" : "NOT_CONFIRMED"
+    }
+  }, {
+    "activitySegment" : {
+      "startLocation" : {
+        "latitudeE7" : 506335749,
+        "longitudeE7" : 114761375,
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        }
+      },
+      "endLocation" : {
+        "latitudeE7" : 506332746,
+        "longitudeE7" : 114922981,
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        }
+      },
+      "duration" : {
+        "startTimestampMs" : "1604227274288",
+        "endTimestampMs" : "1604228291434"
+      },
+      "distance" : 1213,
+      "activityType" : "IN_PASSENGER_VEHICLE",
+      "confidence" : "HIGH",
+      "activities" : [ {
+        "activityType" : "IN_PASSENGER_VEHICLE",
+        "probability" : 95.56583762168884
+      }, {
+        "activityType" : "WALKING",
+        "probability" : 2.89471372961998
+      }, {
+        "activityType" : "STILL",
+        "probability" : 1.0110876522958279
+      }, {
+        "activityType" : "CYCLING",
+        "probability" : 0.28495597653090954
+      }, {
+        "activityType" : "MOTORCYCLING",
+        "probability" : 0.13881028862670064
+      }, {
+        "activityType" : "RUNNING",
+        "probability" : 0.04267515614628792
+      }, {
+        "activityType" : "IN_BUS",
+        "probability" : 0.02211186510976404
+      }, {
+        "activityType" : "SKIING",
+        "probability" : 0.011985540186287835
+      }, {
+        "activityType" : "FLYING",
+        "probability" : 0.010393147385912016
+      }, {
+        "activityType" : "IN_FERRY",
+        "probability" : 0.010298495180904865
+      }, {
+        "activityType" : "IN_TRAIN",
+        "probability" : 0.005066370067652315
+      }, {
+        "activityType" : "SAILING",
+        "probability" : 9.218942068400793E-4
+      }, {
+        "activityType" : "IN_TRAM",
+        "probability" : 8.727839485800359E-4
+      }, {
+        "activityType" : "IN_SUBWAY",
+        "probability" : 2.6629711555870017E-4
+      }, {
+        "activityType" : "IN_VEHICLE",
+        "probability" : 3.4237714885421155E-6
+      } ],
+      "simplifiedRawPath" : {
+        "points" : [ {
+          "latE7" : 506327631,
+          "lngE7" : 114764851,
+          "timestampMs" : "1604228064753",
+          "accuracyMeters" : 92
+        } ]
+      },
+      "parkingEvent" : {
+        "timestampMs" : "1604228291434",
+        "location" : {
+          "latitudeE7" : 506332746,
+          "longitudeE7" : 114922981,
+          "accuracyMetres" : 20
+        }
+      }
+    }
+  }, {
+    "placeVisit" : {
+      "location" : {
+        "latitudeE7" : 506332038,
+        "longitudeE7" : 114922838,
+        "placeId" : "ChIJK-2LBMpQoUcRNJxq3TFBDmU",
+        "address" : "Preßwitzer Str. 24\n07333 Unterwellenborn\nDeutschland",
+        "name" : "Güldene Gabel",
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        },
+        "locationConfidence" : 97.416725
+      },
+      "duration" : {
+        "startTimestampMs" : "1604228291434",
+        "endTimestampMs" : "1604232283357"
+      },
+      "placeConfidence" : "HIGH_CONFIDENCE",
+      "centerLatE7" : 506332450,
+      "centerLngE7" : 114923225,
+      "visitConfidence" : 85,
+      "otherCandidateLocations" : [ {
+        "latitudeE7" : 506332038,
+        "longitudeE7" : 114922838,
+        "placeId" : "ChIJK-2LBMpQoUcRM1iOx3Lrl1s",
+        "locationConfidence" : 0.5033972
+      }, {
+        "latitudeE7" : 506334328,
+        "longitudeE7" : 114925998,
+        "placeId" : "ChIJ9ZeOG8pQoUcR-lW2xu7n70Y",
+        "locationConfidence" : 0.16569296
+      }, {
+        "latitudeE7" : 505595207,
+        "longitudeE7" : 116960127,
+        "placeId" : "ChIJm78Z2IZEoUcR1FSHPNUVgq0",
+        "locationConfidence" : 0.12307068
+      }, {
+        "latitudeE7" : 506320136,
+        "longitudeE7" : 114923322,
+        "placeId" : "ChIJ5eUD_bVQoUcR0HW4b2gzgUw",
+        "locationConfidence" : 0.096825175
+      } ],
+      "editConfirmationStatus" : "NOT_CONFIRMED"
+    }
+  }, {
+    "activitySegment" : {
+      "startLocation" : {
+        "latitudeE7" : 506332417,
+        "longitudeE7" : 114923238,
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        }
+      },
+      "endLocation" : {
+        "latitudeE7" : 506335729,
+        "longitudeE7" : 114760810,
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        }
+      },
+      "duration" : {
+        "startTimestampMs" : "1604232283357",
+        "endTimestampMs" : "1604232774500"
+      },
+      "distance" : 1146,
+      "activityType" : "IN_PASSENGER_VEHICLE",
+      "confidence" : "HIGH",
+      "activities" : [ {
+        "activityType" : "IN_PASSENGER_VEHICLE",
+        "probability" : 95.3677237033844
+      }, {
+        "activityType" : "WALKING",
+        "probability" : 3.5469938069581985
+      }, {
+        "activityType" : "CYCLING",
+        "probability" : 0.3752713557332754
+      }, {
+        "activityType" : "STILL",
+        "probability" : 0.3371292492374778
+      }, {
+        "activityType" : "MOTORCYCLING",
+        "probability" : 0.19651975017040968
+      }, {
+        "activityType" : "RUNNING",
+        "probability" : 0.05872546462342143
+      }, {
+        "activityType" : "IN_BUS",
+        "probability" : 0.053622014820575714
+      }, {
+        "activityType" : "SKIING",
+        "probability" : 0.01910114660859108
+      }, {
+        "activityType" : "IN_FERRY",
+        "probability" : 0.01858590985648334
+      }, {
+        "activityType" : "FLYING",
+        "probability" : 0.015553875709883869
+      }, {
+        "activityType" : "IN_TRAIN",
+        "probability" : 0.006449462671298534
+      }, {
+        "activityType" : "IN_TRAM",
+        "probability" : 0.0021108075088704936
+      }, {
+        "activityType" : "SAILING",
+        "probability" : 0.0014698843187943567
+      }, {
+        "activityType" : "IN_SUBWAY",
+        "probability" : 7.390316568489652E-4
+      }, {
+        "activityType" : "IN_VEHICLE",
+        "probability" : 1.1117108300595646E-5
+      } ],
+      "parkingEvent" : {
+        "timestampMs" : "1604232774500",
+        "location" : {
+          "latitudeE7" : 506335729,
+          "longitudeE7" : 114760810,
+          "accuracyMetres" : 28
+        }
+      }
+    }
+  }, {
+    "placeVisit" : {
+      "location" : {
+        "latitudeE7" : 506334844,
+        "longitudeE7" : 114761707,
+        "placeId" : "ChIJ5-3Xz0lXoUcRPqZf9jdSfPw",
+        "address" : "Trebe 3\n07333 Unterwellenborn\nDeutschland",
+        "name" : "Trebe 3",
+        "semanticType" : "TYPE_SEARCHED_ADDRESS",
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        },
+        "locationConfidence" : 96.768394
+      },
+      "duration" : {
+        "startTimestampMs" : "1604232774500",
+        "endTimestampMs" : "1604237068582"
+      },
+      "placeConfidence" : "HIGH_CONFIDENCE",
+      "centerLatE7" : 506335541,
+      "centerLngE7" : 114761341,
+      "visitConfidence" : 75,
+      "otherCandidateLocations" : [ {
+        "latitudeE7" : 506333591,
+        "longitudeE7" : 114763357,
+        "placeId" : "ChIJz5FjxUlXoUcRvPogt0TQqhA",
+        "locationConfidence" : 0.26474282
+      }, {
+        "latitudeE7" : 505595207,
+        "longitudeE7" : 116960127,
+        "placeId" : "ChIJm78Z2IZEoUcR1FSHPNUVgq0",
+        "locationConfidence" : 0.12675996
+      }, {
+        "latitudeE7" : 506353780,
+        "longitudeE7" : 114751840,
+        "placeId" : "ChIJQwRTvzdXoUcR_KjWtp1pr-k",
+        "locationConfidence" : 0.066022076
+      }, {
+        "latitudeE7" : 506332201,
+        "longitudeE7" : 114772646,
+        "placeId" : "ChIJaZgzSjZXoUcRk8caWAyrTec",
+        "locationConfidence" : 0.04902798
+      } ],
+      "editConfirmationStatus" : "NOT_CONFIRMED"
+    }
+  }, {
+    "activitySegment" : {
+      "startLocation" : {
+        "latitudeE7" : 506335720,
+        "longitudeE7" : 114760749,
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        }
+      },
+      "endLocation" : {
+        "latitudeE7" : 495328683,
+        "longitudeE7" : 110181636,
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        }
+      },
+      "duration" : {
+        "startTimestampMs" : "1604237068582",
+        "endTimestampMs" : "1604246103479"
+      },
+      "distance" : 142188,
+      "activityType" : "IN_PASSENGER_VEHICLE",
+      "confidence" : "HIGH",
+      "activities" : [ {
+        "activityType" : "IN_PASSENGER_VEHICLE",
+        "probability" : 95.23297548294067
+      }, {
+        "activityType" : "STILL",
+        "probability" : 3.2992295920848846
+      }, {
+        "activityType" : "WALKING",
+        "probability" : 1.2284072116017342
+      }, {
+        "activityType" : "MOTORCYCLING",
+        "probability" : 0.08643079781904817
+      }, {
+        "activityType" : "CYCLING",
+        "probability" : 0.04472713335417211
+      }, {
+        "activityType" : "IN_TRAIN",
+        "probability" : 0.03998437605332583
+      }, {
+        "activityType" : "IN_BUS",
+        "probability" : 0.03662463859654963
+      }, {
+        "activityType" : "FLYING",
+        "probability" : 0.0158250579261221
+      }, {
+        "activityType" : "RUNNING",
+        "probability" : 0.00632067967671901
+      }, {
+        "activityType" : "IN_FERRY",
+        "probability" : 0.005494194556376897
+      }, {
+        "activityType" : "SKIING",
+        "probability" : 0.002897104059229605
+      }, {
+        "activityType" : "IN_SUBWAY",
+        "probability" : 5.214523298491258E-4
+      }, {
+        "activityType" : "IN_TRAM",
+        "probability" : 2.969677780129132E-4
+      }, {
+        "activityType" : "SAILING",
+        "probability" : 2.644059350132011E-4
+      }, {
+        "activityType" : "IN_VEHICLE",
+        "probability" : 5.92521516296074E-6
+      } ],
+      "waypointPath" : {
+        "waypoints" : [ {
+          "latE7" : 506335678,
+          "lngE7" : 114760637
+        }, {
+          "latE7" : 506579704,
+          "lngE7" : 118124895
+        }, {
+          "latE7" : 505516853,
+          "lngE7" : 117920150
+        }, {
+          "latE7" : 495039825,
+          "lngE7" : 111243143
+        }, {
+          "latE7" : 495328636,
+          "lngE7" : 110181617
+        } ]
+      },
+      "simplifiedRawPath" : {
+        "points" : [ {
+          "latE7" : 505517883,
+          "lngE7" : 117919092,
+          "timestampMs" : "1604241031000",
+          "accuracyMeters" : 3
+        } ]
+      },
+      "parkingEvent" : {
+        "timestampMs" : "1604246346283",
+        "location" : {
+          "latitudeE7" : 495327294,
+          "longitudeE7" : 110181686,
+          "accuracyMetres" : 27
+        }
+      }
+    }
+  }, {
+    "placeVisit" : {
+      "location" : {
+        "latitudeE7" : 495326648,
+        "longitudeE7" : 110182501,
+        "placeId" : "ChIJv9advmH-oUcRzw5cjjWmc4Y",
+        "address" : "Bad Brückenauer Str. 39\n90427 Nürnberg\nDeutschland",
+        "name" : "Bad Brückenauer Str. 39",
+        "semanticType" : "TYPE_HOME",
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        },
+        "locationConfidence" : 97.14725
+      },
+      "duration" : {
+        "startTimestampMs" : "1604246103479",
+        "endTimestampMs" : "1604501128847"
+      },
+      "placeConfidence" : "HIGH_CONFIDENCE",
+      "centerLatE7" : 495327657,
+      "centerLngE7" : 110181329,
+      "visitConfidence" : 87,
+      "otherCandidateLocations" : [ {
+        "latitudeE7" : 495288115,
+        "longitudeE7" : 110240265,
+        "placeId" : "ChIJW-5VXmP-oUcRpoP1uW9DGIk",
+        "locationConfidence" : 1.4109979
+      }, {
+        "latitudeE7" : 495305276,
+        "longitudeE7" : 110479257,
+        "placeId" : "ChIJIQi3In_-oUcRnMowY5S786Q",
+        "locationConfidence" : 0.7115978
+      }, {
+        "latitudeE7" : 495327121,
+        "longitudeE7" : 110181219,
+        "placeId" : "ChIJNV5UuWH-oUcRNu9rJcc_r1E",
+        "locationConfidence" : 0.3565789
+      }, {
+        "latitudeE7" : 495325099,
+        "longitudeE7" : 110202804,
+        "placeId" : "ChIJo_u1IGL-oUcRI1jU0iuOTq8",
+        "locationConfidence" : 0.12117692
+      } ],
+      "editConfirmationStatus" : "NOT_CONFIRMED"
+    }
+  }, {
+    "activitySegment" : {
+      "startLocation" : {
+        "latitudeE7" : 495328701,
+        "longitudeE7" : 110181519,
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        }
+      },
+      "endLocation" : {
+        "latitudeE7" : 494960959,
+        "longitudeE7" : 114326697,
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        }
+      },
+      "duration" : {
+        "startTimestampMs" : "1604501128847",
+        "endTimestampMs" : "1604507040892"
+      },
+      "distance" : 39325,
+      "activityType" : "IN_PASSENGER_VEHICLE",
+      "confidence" : "HIGH",
+      "activities" : [ {
+        "activityType" : "IN_PASSENGER_VEHICLE",
+        "probability" : 97.04738855361938
+      }, {
+        "activityType" : "STILL",
+        "probability" : 2.1777061745524406
+      }, {
+        "activityType" : "WALKING",
+        "probability" : 0.503408070653677
+      }, {
+        "activityType" : "IN_BUS",
+        "probability" : 0.16926589887589216
+      }, {
+        "activityType" : "CYCLING",
+        "probability" : 0.0406616076361388
+      }, {
+        "activityType" : "MOTORCYCLING",
+        "probability" : 0.030867382884025574
+      }, {
+        "activityType" : "FLYING",
+        "probability" : 0.008838251233100891
+      }, {
+        "activityType" : "IN_TRAIN",
+        "probability" : 0.006445970211643726
+      }, {
+        "activityType" : "SKIING",
+        "probability" : 0.0063293977291323245
+      }, {
+        "activityType" : "IN_FERRY",
+        "probability" : 0.00478236070193816
+      }, {
+        "activityType" : "RUNNING",
+        "probability" : 0.00270932159764925
+      }, {
+        "activityType" : "IN_TRAM",
+        "probability" : 0.001301075371884508
+      }, {
+        "activityType" : "SAILING",
+        "probability" : 2.171052756239078E-4
+      }, {
+        "activityType" : "IN_SUBWAY",
+        "probability" : 8.921343805923243E-5
+      }, {
+        "activityType" : "IN_VEHICLE",
+        "probability" : 2.53166660968418E-6
+      } ],
+      "waypointPath" : {
+        "waypoints" : [ {
+          "latE7" : 495328674,
+          "lngE7" : 110181503
+        }, {
+          "latE7" : 495270538,
+          "lngE7" : 110110702
+        }, {
+          "latE7" : 495264320,
+          "lngE7" : 110105724
+        }, {
+          "latE7" : 495222244,
+          "lngE7" : 110206804
+        }, {
+          "latE7" : 495175018,
+          "lngE7" : 110313825
+        } ]
+      },
+      "simplifiedRawPath" : {
+        "points" : [ {
+          "latE7" : 495264473,
+          "lngE7" : 110105371,
+          "timestampMs" : "1604501234000",
+          "accuracyMeters" : 4
+        } ]
+      },
+      "parkingEvent" : {
+        "timestampMs" : "1604507040897",
+        "location" : {
+          "latitudeE7" : 495013711,
+          "longitudeE7" : 114122952,
+          "accuracyMetres" : 99
+        }
+      }
+    }
+  }, {
+    "placeVisit" : {
+      "location" : {
+        "latitudeE7" : 494976700,
+        "longitudeE7" : 114323100,
+        "placeId" : "ChIJHfuS3-DeoUcRV7fj4U0yU9A",
+        "address" : "Leutenbachstraße 26B\n91217 Hersbruck\nDeutschland",
+        "name" : "Leutenbachstraße 26B",
+        "semanticType" : "TYPE_SEARCHED_ADDRESS",
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        },
+        "locationConfidence" : 96.42654
+      },
+      "duration" : {
+        "startTimestampMs" : "1604507040892",
+        "endTimestampMs" : "1604511777752"
+      },
+      "placeConfidence" : "HIGH_CONFIDENCE",
+      "centerLatE7" : 494978300,
+      "centerLngE7" : 114325133,
+      "visitConfidence" : 84,
+      "otherCandidateLocations" : [ {
+        "latitudeE7" : 494995958,
+        "longitudeE7" : 114347568,
+        "placeId" : "ChIJO67bP-feoUcRJzfyRjniQR4",
+        "locationConfidence" : 0.44004387
+      }, {
+        "latitudeE7" : 494981696,
+        "longitudeE7" : 114333437,
+        "placeId" : "ChIJ5U_N2uDeoUcReqGspmST54g",
+        "locationConfidence" : 0.1877999
+      }, {
+        "latitudeE7" : 494977800,
+        "longitudeE7" : 114330401,
+        "placeId" : "ChIJv4G93ODeoUcR-Xr3XB5EmtQ",
+        "locationConfidence" : 0.13899502
+      }, {
+        "latitudeE7" : 495005166,
+        "longitudeE7" : 114347464,
+        "placeId" : "ChIJdzBPbefeoUcRvNzTEuHjkxA",
+        "locationConfidence" : 0.0938884
+      } ],
+      "editConfirmationStatus" : "NOT_CONFIRMED"
+    }
+  }, {
+    "activitySegment" : {
+      "startLocation" : {
+        "latitudeE7" : 494976950,
+        "longitudeE7" : 114322501,
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        }
+      },
+      "endLocation" : {
+        "latitudeE7" : 495328420,
+        "longitudeE7" : 110183874,
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        }
+      },
+      "duration" : {
+        "startTimestampMs" : "1604511777752",
+        "endTimestampMs" : "1604513757000"
+      },
+      "distance" : 30153,
+      "activityType" : "IN_PASSENGER_VEHICLE",
+      "confidence" : "HIGH",
+      "activities" : [ {
+        "activityType" : "IN_PASSENGER_VEHICLE",
+        "probability" : 97.3608672618866
+      }, {
+        "activityType" : "STILL",
+        "probability" : 1.8311193212866783
+      }, {
+        "activityType" : "WALKING",
+        "probability" : 0.6246254313737154
+      }, {
+        "activityType" : "IN_BUS",
+        "probability" : 0.11626713676378131
+      }, {
+        "activityType" : "MOTORCYCLING",
+        "probability" : 0.030077979317866266
+      }, {
+        "activityType" : "FLYING",
+        "probability" : 0.021058236598037183
+      }, {
+        "activityType" : "IN_TRAIN",
+        "probability" : 0.008476058428641409
+      }, {
+        "activityType" : "CYCLING",
+        "probability" : 0.0028917220333823934
+      }, {
+        "activityType" : "IN_FERRY",
+        "probability" : 0.002024143577727955
+      }, {
+        "activityType" : "RUNNING",
+        "probability" : 0.0015948931832099333
+      }, {
+        "activityType" : "SKIING",
+        "probability" : 4.6510585889336653E-4
+      }, {
+        "activityType" : "IN_SUBWAY",
+        "probability" : 2.3442137262463802E-4
+      }, {
+        "activityType" : "IN_TRAM",
+        "probability" : 2.2977342268859502E-4
+      }, {
+        "activityType" : "SAILING",
+        "probability" : 6.280270667957666E-5
+      }, {
+        "activityType" : "IN_VEHICLE",
+        "probability" : 2.510735086502791E-6
+      } ],
+      "waypointPath" : {
+        "waypoints" : [ {
+          "latE7" : 494978561,
+          "lngE7" : 114322471
+        }, {
+          "latE7" : 494688987,
+          "lngE7" : 111871194
+        }, {
+          "latE7" : 495328216,
+          "lngE7" : 110183792
+        } ]
+      },
+      "parkingEvent" : {
+        "timestampMs" : "1604513737320",
+        "location" : {
+          "latitudeE7" : 495325098,
+          "longitudeE7" : 110234745,
+          "accuracyMetres" : 13
+        }
+      }
+    }
+  }, {
+    "placeVisit" : {
+      "location" : {
+        "latitudeE7" : 495326648,
+        "longitudeE7" : 110182501,
+        "placeId" : "ChIJv9advmH-oUcRzw5cjjWmc4Y",
+        "address" : "Bad Brückenauer Str. 39\n90427 Nürnberg\nDeutschland",
+        "name" : "Bad Brückenauer Str. 39",
+        "semanticType" : "TYPE_HOME",
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        },
+        "locationConfidence" : 99.23604
+      },
+      "duration" : {
+        "startTimestampMs" : "1604513757000",
+        "endTimestampMs" : "1605570349401"
+      },
+      "placeConfidence" : "HIGH_CONFIDENCE",
+      "centerLatE7" : 495327625,
+      "centerLngE7" : 110181305,
+      "visitConfidence" : 86,
+      "otherCandidateLocations" : [ {
+        "latitudeE7" : 495327121,
+        "longitudeE7" : 110181219,
+        "placeId" : "ChIJNV5UuWH-oUcRNu9rJcc_r1E",
+        "locationConfidence" : 0.24194817
+      }, {
+        "latitudeE7" : 495288115,
+        "longitudeE7" : 110240265,
+        "placeId" : "ChIJW-5VXmP-oUcRpoP1uW9DGIk",
+        "locationConfidence" : 0.12868272
+      }, {
+        "latitudeE7" : 495325099,
+        "longitudeE7" : 110202804,
+        "placeId" : "ChIJo_u1IGL-oUcRI1jU0iuOTq8",
+        "locationConfidence" : 0.052211247
+      }, {
+        "latitudeE7" : 495313672,
+        "longitudeE7" : 110183849,
+        "placeId" : "ChIJSxD0c2H-oUcROe0oToZk-Ak",
+        "locationConfidence" : 0.04713842
+      } ],
+      "editConfirmationStatus" : "NOT_CONFIRMED"
+    }
+  }, {
+    "placeVisit" : {
+      "location" : {
+        "latitudeE7" : 495326648,
+        "longitudeE7" : 110182501,
+        "placeId" : "ChIJv9advmH-oUcRzw5cjjWmc4Y",
+        "address" : "Bad Brückenauer Str. 39\n90427 Nürnberg\nDeutschland",
+        "name" : "Bad Brückenauer Str. 39",
+        "semanticType" : "TYPE_HOME",
+        "sourceInfo" : {
+          "deviceTag" : 918142345
+        },
+        "locationConfidence" : 91.65535
+      },
+      "duration" : {
+        "startTimestampMs" : "1605679710473",
+        "endTimestampMs" : "1605980794380"
+      },
+      "placeConfidence" : "HIGH_CONFIDENCE",
+      "centerLatE7" : 495328040,
+      "centerLngE7" : 110181540,
+      "visitConfidence" : 80,
+      "otherCandidateLocations" : [ {
+        "latitudeE7" : 495327121,
+        "longitudeE7" : 110181219,
+        "placeId" : "ChIJNV5UuWH-oUcRNu9rJcc_r1E",
+        "locationConfidence" : 0.70496887
+      }, {
+        "latitudeE7" : 495325099,
+        "longitudeE7" : 110202804,
+        "placeId" : "ChIJo_u1IGL-oUcRI1jU0iuOTq8",
+        "locationConfidence" : 0.27201095
+      }, {
+        "latitudeE7" : 495313672,
+        "longitudeE7" : 110183849,
+        "placeId" : "ChIJSxD0c2H-oUcROe0oToZk-Ak",
+        "locationConfidence" : 0.13297261
+      }, {
+        "latitudeE7" : 495315304,
+        "longitudeE7" : 110186904,
+        "placeId" : "ChIJ55gvcGH-oUcRnAcEaq1h9cw",
+        "locationConfidence" : 0.12871258
+      } ],
+      "editConfirmationStatus" : "NOT_CONFIRMED"
+    }
+  }, {
+    "placeVisit" : {
+      "location" : {
+        "latitudeE7" : 495326648,
+        "longitudeE7" : 110182501,
+        "placeId" : "ChIJv9advmH-oUcRzw5cjjWmc4Y",
+        "address" : "Bad Brückenauer Str. 39\n90427 Nürnberg\nDeutschland",
+        "name" : "Bad Brückenauer Str. 39",
+        "semanticType" : "TYPE_HOME",
+        "sourceInfo" : {
+          "deviceTag" : 2104230838
+        },
+        "locationConfidence" : 98.24035
+      },
+      "duration" : {
+        "startTimestampMs" : "1606501076901",
+        "endTimestampMs" : "1607077898198"
+      },
+      "placeConfidence" : "HIGH_CONFIDENCE",
+      "centerLatE7" : 495327348,
+      "centerLngE7" : 110181471,
+      "visitConfidence" : 91,
+      "otherCandidateLocations" : [ {
+        "latitudeE7" : 495327121,
+        "longitudeE7" : 110181219,
+        "placeId" : "ChIJNV5UuWH-oUcRNu9rJcc_r1E",
+        "locationConfidence" : 0.43180203
+      }, {
+        "latitudeE7" : 495325099,
+        "longitudeE7" : 110202804,
+        "placeId" : "ChIJo_u1IGL-oUcRI1jU0iuOTq8",
+        "locationConfidence" : 0.09881591
+      }, {
+        "latitudeE7" : 495315304,
+        "longitudeE7" : 110186904,
+        "placeId" : "ChIJ55gvcGH-oUcRnAcEaq1h9cw",
+        "locationConfidence" : 0.072799474
+      }, {
+        "latitudeE7" : 495329997,
+        "longitudeE7" : 110181167,
+        "placeId" : "ChIJAQCcuGH-oUcRM_jN84X9m_g",
+        "locationConfidence" : 0.03785147
+      } ],
+      "editConfirmationStatus" : "NOT_CONFIRMED"
+    }
+  } ]
+}

@@ -1,0 +1,48 @@
+{
+  "timelineObjects" : [ {
+    "placeVisit" : {
+      "location" : {
+        "latitudeE7" : 495326648,
+        "longitudeE7" : 110182501,
+        "placeId" : "ChIJv9advmH-oUcRzw5cjjWmc4Y",
+        "address" : "Bad Brückenauer Str. 39\n90427 Nürnberg\nDeutschland",
+        "name" : "Bad Brückenauer Str. 39",
+        "semanticType" : "TYPE_HOME",
+        "sourceInfo" : {
+          "deviceTag" : 2104230838
+        },
+        "locationConfidence" : 98.17963
+      },
+      "duration" : {
+        "startTimestampMs" : "1615825814067",
+        "endTimestampMs" : "1616740092325"
+      },
+      "placeConfidence" : "HIGH_CONFIDENCE",
+      "centerLatE7" : 495327650,
+      "centerLngE7" : 110181753,
+      "visitConfidence" : 92,
+      "otherCandidateLocations" : [ {
+        "latitudeE7" : 495327121,
+        "longitudeE7" : 110181219,
+        "placeId" : "ChIJNV5UuWH-oUcRNu9rJcc_r1E",
+        "locationConfidence" : 0.8086203
+      }, {
+        "latitudeE7" : 495313672,
+        "longitudeE7" : 110183849,
+        "placeId" : "ChIJSxD0c2H-oUcROe0oToZk-Ak",
+        "locationConfidence" : 0.09574733
+      }, {
+        "latitudeE7" : 495325099,
+        "longitudeE7" : 110202804,
+        "placeId" : "ChIJo_u1IGL-oUcRI1jU0iuOTq8",
+        "locationConfidence" : 0.07257248
+      }, {
+        "latitudeE7" : 495324458,
+        "longitudeE7" : 110204511,
+        "placeId" : "ChIJjzDJJmL-oUcRKuk6KthycXk",
+        "locationConfidence" : 0.02589875
+      } ],
+      "editConfirmationStatus" : "NOT_CONFIRMED"
+    }
+  } ]
+}

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LocationFromGoogle.Classes;
 
 namespace LocationFromGoogle
 {
@@ -23,6 +24,10 @@ namespace LocationFromGoogle
         public MainWindow()
         {
             InitializeComponent();
+
+            var query = DeSerializer.GetDataListFromJsonFile();
+
+            DTG_Locations.ItemsSource = DeSerializer.GetDataListFromJsonFile();
         }
     }
 }

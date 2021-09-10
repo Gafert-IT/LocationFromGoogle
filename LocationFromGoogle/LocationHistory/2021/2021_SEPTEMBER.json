@@ -1,0 +1,139 @@
+{
+  "timelineObjects" : [ {
+    "activitySegment" : {
+      "startLocation" : {
+        "latitudeE7" : 494632671,
+        "longitudeE7" : 109907340,
+        "sourceInfo" : {
+          "deviceTag" : 1761721175
+        }
+      },
+      "endLocation" : {
+        "latitudeE7" : 495327322,
+        "longitudeE7" : 110186342,
+        "sourceInfo" : {
+          "deviceTag" : 1761721175
+        }
+      },
+      "duration" : {
+        "startTimestampMs" : "1630466411208",
+        "endTimestampMs" : "1630467378426"
+      },
+      "distance" : 8107,
+      "activityType" : "IN_PASSENGER_VEHICLE",
+      "confidence" : "HIGH",
+      "activities" : [ {
+        "activityType" : "IN_PASSENGER_VEHICLE",
+        "probability" : 98.71748685836792
+      }, {
+        "activityType" : "WALKING",
+        "probability" : 0.39154323749244213
+      }, {
+        "activityType" : "MOTORCYCLING",
+        "probability" : 0.33481502905488014
+      }, {
+        "activityType" : "STILL",
+        "probability" : 0.24371747858822346
+      }, {
+        "activityType" : "CYCLING",
+        "probability" : 0.20319765899330378
+      }, {
+        "activityType" : "IN_BUS",
+        "probability" : 0.04459859919734299
+      }, {
+        "activityType" : "IN_FERRY",
+        "probability" : 0.01873411238193512
+      }, {
+        "activityType" : "RUNNING",
+        "probability" : 0.01730245421640575
+      }, {
+        "activityType" : "FLYING",
+        "probability" : 0.0088094973762054
+      }, {
+        "activityType" : "SKIING",
+        "probability" : 0.006834130908828229
+      }, {
+        "activityType" : "IN_TRAIN",
+        "probability" : 0.006746787403244525
+      }, {
+        "activityType" : "IN_SUBWAY",
+        "probability" : 0.003227366687497124
+      }, {
+        "activityType" : "SAILING",
+        "probability" : 0.0016657060768920928
+      }, {
+        "activityType" : "IN_TRAM",
+        "probability" : 0.0013262961147120222
+      }, {
+        "activityType" : "IN_VEHICLE",
+        "probability" : 3.709034468446504E-8
+      } ],
+      "simplifiedRawPath" : {
+        "points" : [ {
+          "latE7" : 495243930,
+          "lngE7" : 110067708,
+          "timestampMs" : "1630467137294",
+          "accuracyMeters" : 110
+        }, {
+          "latE7" : 495278642,
+          "lngE7" : 110108682,
+          "timestampMs" : "1630467258596",
+          "accuracyMeters" : 17
+        } ]
+      },
+      "parkingEvent" : {
+        "timestampMs" : "1630467602785",
+        "location" : {
+          "latitudeE7" : 495328070,
+          "longitudeE7" : 110181011,
+          "accuracyMetres" : 29
+        }
+      }
+    }
+  }, {
+    "placeVisit" : {
+      "location" : {
+        "latitudeE7" : 495326648,
+        "longitudeE7" : 110182501,
+        "placeId" : "ChIJv9advmH-oUcRzw5cjjWmc4Y",
+        "address" : "Bad Brückenauer Str. 39\n90427 Nürnberg\nDeutschland",
+        "name" : "Bad Brückenauer Str. 39",
+        "semanticType" : "TYPE_HOME",
+        "sourceInfo" : {
+          "deviceTag" : 1761721175
+        },
+        "locationConfidence" : 97.80974
+      },
+      "duration" : {
+        "startTimestampMs" : "1630467378426",
+        "endTimestampMs" : "1630505405264"
+      },
+      "placeConfidence" : "HIGH_CONFIDENCE",
+      "centerLatE7" : 495327700,
+      "centerLngE7" : 110181847,
+      "visitConfidence" : 90,
+      "otherCandidateLocations" : [ {
+        "latitudeE7" : 495327121,
+        "longitudeE7" : 110181219,
+        "placeId" : "ChIJNV5UuWH-oUcRNu9rJcc_r1E",
+        "locationConfidence" : 0.20092021
+      }, {
+        "latitudeE7" : 495325099,
+        "longitudeE7" : 110202804,
+        "placeId" : "ChIJo_u1IGL-oUcRI1jU0iuOTq8",
+        "locationConfidence" : 0.115303464
+      }, {
+        "latitudeE7" : 495313672,
+        "longitudeE7" : 110183849,
+        "placeId" : "ChIJSxD0c2H-oUcROe0oToZk-Ak",
+        "locationConfidence" : 0.08474261
+      }, {
+        "latitudeE7" : 495329997,
+        "longitudeE7" : 110181167,
+        "placeId" : "ChIJAQCcuGH-oUcRM_jN84X9m_g",
+        "locationConfidence" : 0.07419048
+      } ],
+      "editConfirmationStatus" : "NOT_CONFIRMED"
+    }
+  } ]
+}
