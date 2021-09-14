@@ -11,39 +11,39 @@ namespace LocationFromGoogle.Classes
 
     public class Duration
     {
-        private DateTime startTimestampMsDateTime;
-        private DateTime endTimestampMsDateTime;
+        private DateTime _startTimestamp;
+        private DateTime _endTimestamp;
 
-        internal DateTime StartTimestampMsDateTime { get => startTimestampMsDateTime; set => startTimestampMsDateTime = value; }
+        internal DateTime StartTimestamp { get => _startTimestamp; set => _startTimestamp = value; }
         public long StartTimestampMs
         {
             get
             {
                 DTToTSDelegate tempDel = DateTimeToUnixTimeStamp;
 
-                return tempDel(StartTimestampMsDateTime);
+                return tempDel(StartTimestamp);
             }
             set
             {
                 TSToDTDelegate tempDel = UnixTimeStampToDateTime;
 
-                StartTimestampMsDateTime = tempDel(value);
+                StartTimestamp = tempDel(value);
             }
         }
-        internal DateTime EndTimestampMsDateTime { get => endTimestampMsDateTime; set => endTimestampMsDateTime = value; }
+        internal DateTime EndTimestamp { get => _endTimestamp; set => _endTimestamp = value; }
         public long EndTimestampMs
         {
             get
             {
                 DTToTSDelegate tempDel = DateTimeToUnixTimeStamp;
 
-                return tempDel(EndTimestampMsDateTime);
+                return tempDel(EndTimestamp);
             }
             set
             {
                 TSToDTDelegate tempDel = UnixTimeStampToDateTime;
 
-                EndTimestampMsDateTime = tempDel(value);
+                EndTimestamp = tempDel(value);
             }
         }
 

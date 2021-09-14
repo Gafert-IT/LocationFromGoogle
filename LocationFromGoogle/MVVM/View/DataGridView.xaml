@@ -4,20 +4,84 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:LocationFromGoogle.MVVM.View"
-             xmlns:vm="clr-namespace:LocationFromGoogle.MVVM.ViewModel"
+             xmlns:viewModel="clr-namespace:LocationFromGoogle.MVVM.ViewModel"  
+             xmlns:core="clr-namespace:LocationFromGoogle.Core"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <!--<UserControl.DataContext>
-        <vm:TermineVM/>
-    </UserControl.DataContext>-->
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+             d:DesignHeight="525" d:DesignWidth="700">
+   
+    <StackPanel>
+        <TextBlock Text="Überblick"
+                   Foreground="White"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,10"
+                   FontFamily="/Fonts/#ProductSans"/>
 
-        <GroupBox Header="Termine" FontSize="14">
-            <DataGrid x:Name="LBX_Termine" Grid.Row="1" ItemsSource="{Binding TerminListe}"/>
-        </GroupBox>
-    </Grid>
-</UserControl>
+        <Border Width="690"
+                Height="450"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0"
+                                     EndPoint="1,2">
+                    <GradientStop Color="#609BEB" Offset="0.0"/>
+                    <GradientStop Color="#1A73E8" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Border.Clip>
+                <RectangleGeometry RadiusX="10"
+                                   RadiusY="10"
+                                   Rect="0,0,690,450"/>
+            </Border.Clip>
+
+            <DataGrid x:Name="DTG_Locations" 
+                      ItemsSource="{Binding TLO_List}"
+                      AutoGenerateColumns="False"                      
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Top"
+                      Margin="10"
+                      Width="670"
+                      Height="430"
+                      Background="Transparent"
+                      RowBackground="Transparent"
+                      BorderThickness="1"
+                      BorderBrush="Black"
+                      VerticalScrollBarVisibility="Hidden">
+                
+                <DataGrid.ColumnHeaderStyle>
+                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                        <Setter Property="BorderBrush" Value="Black"/>   
+                    </Style>
+                </DataGrid.ColumnHeaderStyle>
+
+                <DataGrid.RowHeaderStyle>
+                    <Style TargetType="{x:Type DataGridRowHeader}">
+                        <Setter Property="Background" Value="Transparent"/>    
+                    </Style>
+                </DataGrid.RowHeaderStyle>                
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header=" Datum" 
+                                        Width="75"
+                                        Binding="{Binding PlaceVisit.Duration.StartTimestamp}"/>
+                    <DataGridTextColumn Header=" Von" 
+                                        Width="50"
+                                        Binding="{Binding PlaceVisit.Duration.StartTimestamp.TimeOfDay}"/>
+                    <DataGridTextColumn Header=" Bis" 
+                                        Width="50"
+                                        Binding="{Binding PlaceVisit.Duration.EndTimestamp.TimeOfDay}"/>
+                    <DataGridTextColumn Header=" Place Visited" 
+                                        Width="200"
+                                        Binding="{Binding PlaceVisit.Location.Name}"/>
+                    <DataGridTextColumn Header=" Address" 
+                                        Width="200"
+                                        Binding="{Binding PlaceVisit.Location.Address}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </StackPanel>
+</UserControl>   

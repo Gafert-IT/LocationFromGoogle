@@ -7,7 +7,7 @@ namespace LocationFromGoogle
 {
     internal class DeSerializer
     {
-        internal static readonly string filePath = @".\LocationHistory\2016\2016_AUGUST.json";
+        internal static readonly string filePath = @"D:\Visual Studio Projekte\LocationFromGoogle\LocationFromGoogle\LocationHistory\2016\2016_AUGUST.json";
         private static string? jsonString;
         private static TimelineObjectCollection? timeLineObjCollection;
         private static List<TimelineObject>? timeLineObjCollectionList;
