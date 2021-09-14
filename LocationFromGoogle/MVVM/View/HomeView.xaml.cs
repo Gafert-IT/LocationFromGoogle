@@ -12,22 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using LocationFromGoogle.Classes;
 
-namespace LocationFromGoogle
+namespace LocationFromGoogle.MVVM.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for HomeView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class HomeView : UserControl
     {
-        public MainWindow()
+        public HomeView()
         {
             InitializeComponent();
-
-            var query = DeSerializer.GetDataListFromJsonFile();
-
-            //DTG_Locations.ItemsSource = DeSerializer.GetDataListFromJsonFile();
         }
     }
 }

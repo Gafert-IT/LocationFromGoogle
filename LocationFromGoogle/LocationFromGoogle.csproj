@@ -8,14 +8,45 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\Oxygen-Bold.ttf" />
+    <None Remove="Fonts\Oxygen-Light.ttf" />
+    <None Remove="Fonts\Oxygen-Regular.ttf" />
+    <None Remove="Fonts\ProductSans-Regular.ttf" />
+    <None Remove="Images\1200px-Google_Maps_icon_%282020%29.svg.png" />
+    <None Remove="Images\1200px-Google_Maps_Logo.svg.png" />
+    <None Remove="Images\google-maps-icon-transparent-9.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="MVVM\Model\" />
-    <Folder Include="Fonts\" />
-    <Folder Include="Images\" />
-    <Folder Include="Theme\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Oxygen-Bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Oxygen-Light.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Oxygen-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\ProductSans-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\1200px-Google_Maps_icon_(2020).svg.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\1200px-Google_Maps_Logo.svg.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\google-maps-icon-transparent-9.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
