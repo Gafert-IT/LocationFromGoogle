@@ -12,15 +12,68 @@
     <UserControl.Resources>
         <core:DateTimeToString x:Key="DateTimeToString"/>
         <core:UnixTimeStamp x:Key="UnixTimeStamp"/>
+        <viewModel:DataGridViewModel x:Key="DGVM"/>
     </UserControl.Resources>
 
     <StackPanel>
-        <TextBlock Text="Überblick"
-                   Foreground="White"
-                   FontSize="28"
-                   HorizontalAlignment="Left"
-                   Margin="0,0,0,10"
-                   FontFamily="/Fonts/#ProductSans"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Overview"
+                       Foreground="White"
+                       FontSize="28"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       Margin="0,0,0,10"
+                       FontFamily="/Fonts/#ProductSans"/>
+
+            <StackPanel Orientation="Horizontal" Grid.Column="1">
+                <DatePicker x:Name="FromDate" 
+                            Height="25"
+                            Width="150"
+                            Margin="20,0,1,10" 
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            DisplayDateStart="2016,08,01"
+                            DisplayDateEnd="2016,08,31"
+                            DisplayDate="2016,08,01"
+                            SelectedDate="{Binding Path=SelectedDateFrom, Mode=TwoWay}"/>
+
+                <DatePicker x:Name="UntilDate" 
+                            Height="25"
+                            Width="150"
+                            Margin="1,0,1,10"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"                        
+                            DisplayDateStart="2016,08,01"
+                            DisplayDateEnd="2016,08,31"
+                            DisplayDate="2016,08,31"
+                            SelectedDate="{Binding Path=SelectedDateUntil, Mode=TwoWay}"/>
+
+                <Button Height="25"
+                        Width="75"
+                        Margin="10,0,1,10"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Content="Select"                    
+                        Command="{Binding BTN_SelectDate}"/>
+
+                <Button Height="25"
+                        Width="75"
+                        Margin="1,0,10,10"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Content="Reset"                    
+                        Command="{Binding BTN_Reset}"/>
+            </StackPanel>
+        </Grid>
 
         <Border Width="690"
                 Height="450"
@@ -76,15 +129,15 @@
                     </DataGrid.RowHeaderStyle>
 
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header=" Datum" 
+                        <DataGridTextColumn Header=" Date" 
                                             Width="67.5"
                                             IsReadOnly="True"
                                             Binding="{Binding PlaceVisit.Duration.StartTimestampDT, StringFormat=\{00:dd.MM.yyyy\}}"/>
-                        <DataGridTextColumn Header=" Von" 
+                        <DataGridTextColumn Header=" from" 
                                             Width="37.5"
                                             IsReadOnly="True"
                                             Binding="{Binding PlaceVisit.Duration.StartTimestampDT, StringFormat=\{00:HH:mm\}}"/>
-                        <DataGridTextColumn Header=" Bis" 
+                        <DataGridTextColumn Header=" until" 
                                             Width="37.5"
                                             IsReadOnly="True"
                                             Binding="{Binding PlaceVisit.Duration.EndTimestampDT, StringFormat=\{00:HH:mm\}}"/>
@@ -110,5 +163,6 @@
                 </DataGrid>
             </Border>
         </Border>
+
     </StackPanel>
 </UserControl>   
