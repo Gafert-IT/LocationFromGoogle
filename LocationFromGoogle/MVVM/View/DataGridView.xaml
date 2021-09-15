@@ -7,8 +7,13 @@
              xmlns:viewModel="clr-namespace:LocationFromGoogle.MVVM.ViewModel"  
              xmlns:core="clr-namespace:LocationFromGoogle.Core"
              mc:Ignorable="d" 
+             d:DataContext="{d:DesignInstance Type=viewModel:DataGridViewModel}"
              d:DesignHeight="525" d:DesignWidth="700">
-   
+    <UserControl.Resources>
+        <core:DateTimeToString x:Key="DateTimeToString"/>
+        <core:UnixTimeStamp x:Key="UnixTimeStamp"/>
+    </UserControl.Resources>
+
     <StackPanel>
         <TextBlock Text="Überblick"
                    Foreground="White"
@@ -35,53 +40,75 @@
                                    Rect="0,0,690,450"/>
             </Border.Clip>
 
-            <DataGrid x:Name="DTG_Locations" 
+            <Border CornerRadius="10"
+                    BorderThickness="1"
+                    BorderBrush="Black"
+                    Margin="10"
+                    Padding="0">
+
+                <DataGrid x:Name="DTG_Locations"      
                       ItemsSource="{Binding TLO_List}"
-                      AutoGenerateColumns="False"                      
+                      AutoGenerateColumns="false"
                       HorizontalAlignment="Left"
                       VerticalAlignment="Top"
-                      Margin="10"
+                      Margin="0,0,1,1"
                       Width="670"
                       Height="430"
                       Background="Transparent"
                       RowBackground="Transparent"
                       BorderThickness="1"
-                      BorderBrush="Black"
+                      BorderBrush="Transparent"
                       VerticalScrollBarVisibility="Hidden">
-                
-                <DataGrid.ColumnHeaderStyle>
-                    <Style TargetType="{x:Type DataGridColumnHeader}">
-                        <Setter Property="Background" Value="Transparent"/>
-                        <Setter Property="FontWeight" Value="Bold"/>
-                        <Setter Property="BorderThickness" Value="0,0,1,1"/>
-                        <Setter Property="BorderBrush" Value="Black"/>   
-                    </Style>
-                </DataGrid.ColumnHeaderStyle>
 
-                <DataGrid.RowHeaderStyle>
-                    <Style TargetType="{x:Type DataGridRowHeader}">
-                        <Setter Property="Background" Value="Transparent"/>    
-                    </Style>
-                </DataGrid.RowHeaderStyle>                
+                    <DataGrid.ColumnHeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                            <Setter Property="BorderBrush" Value="Black"/>
+                        </Style>
+                    </DataGrid.ColumnHeaderStyle>
 
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header=" Datum" 
-                                        Width="75"
-                                        Binding="{Binding PlaceVisit.Duration.StartTimestamp}"/>
-                    <DataGridTextColumn Header=" Von" 
-                                        Width="50"
-                                        Binding="{Binding PlaceVisit.Duration.StartTimestamp.TimeOfDay}"/>
-                    <DataGridTextColumn Header=" Bis" 
-                                        Width="50"
-                                        Binding="{Binding PlaceVisit.Duration.EndTimestamp.TimeOfDay}"/>
-                    <DataGridTextColumn Header=" Place Visited" 
-                                        Width="200"
-                                        Binding="{Binding PlaceVisit.Location.Name}"/>
-                    <DataGridTextColumn Header=" Address" 
-                                        Width="200"
-                                        Binding="{Binding PlaceVisit.Location.Address}"/>
-                </DataGrid.Columns>
-            </DataGrid>
+                    <DataGrid.RowHeaderStyle>
+                        <Style TargetType="{x:Type DataGridRowHeader}">
+                            <Setter Property="Background" Value="Transparent"/>
+                        </Style>
+                    </DataGrid.RowHeaderStyle>
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header=" Datum" 
+                                            Width="67.5"
+                                            IsReadOnly="True"
+                                            Binding="{Binding PlaceVisit.Duration.StartTimestampDT, StringFormat=\{00:dd.MM.yyyy\}}"/>
+                        <DataGridTextColumn Header=" Von" 
+                                            Width="37.5"
+                                            IsReadOnly="True"
+                                            Binding="{Binding PlaceVisit.Duration.StartTimestampDT, StringFormat=\{00:HH:mm\}}"/>
+                        <DataGridTextColumn Header=" Bis" 
+                                            Width="37.5"
+                                            IsReadOnly="True"
+                                            Binding="{Binding PlaceVisit.Duration.EndTimestampDT, StringFormat=\{00:HH:mm\}}"/>
+                        <DataGridTextColumn Header=" Place Visited" 
+                                            Width="150"                                            
+                                            Binding="{Binding PlaceVisit.Location.Name}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style>
+                                    <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header=" Address" 
+                                            Width="150"
+                                            Binding="{Binding PlaceVisit.Location.Address}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style>
+                                    <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
         </Border>
     </StackPanel>
 </UserControl>   

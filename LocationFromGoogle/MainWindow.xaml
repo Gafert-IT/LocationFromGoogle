@@ -7,17 +7,23 @@
         xmlns:viewModel="clr-namespace:LocationFromGoogle.MVVM.ViewModel"
         mc:Ignorable="d"        
         Height="600" Width="920"
-        WindowStyle="None"
+        WindowStyle="none"
         ResizeMode="NoResize"
         Background="Transparent"
-        AllowsTransparency="True">
+        AllowsTransparency="true">
 
     <Window.DataContext>
         <viewModel:MainViewModel/>
     </Window.DataContext>
 
-    <Border Background="#272537"
-            CornerRadius="20">
+    <Border CornerRadius="20">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0"
+                                         EndPoint="1,2">
+                <GradientStop Color="#272537" Offset="0.0"/>
+                <GradientStop Color="#4c4683" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
@@ -43,7 +49,7 @@
                            Foreground="#777777"
                            Margin="10,0,0,0"/>
             </StackPanel>
-            
+
             <StackPanel Grid.Row="1">
                 <RadioButton Content="Home"
                              Height="50"
@@ -76,7 +82,7 @@
                      Style="{StaticResource ModernTextbox}"/>
 
             <ContentControl Grid.Row="1"
-                            Grid.Column="1"
+                            Grid.Column="1"  
                             Margin="10"
                             Content="{Binding CurrentView}"/>
         </Grid>

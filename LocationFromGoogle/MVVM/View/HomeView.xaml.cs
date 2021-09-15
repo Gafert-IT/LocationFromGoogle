@@ -23,6 +23,6 @@ namespace LocationFromGoogle.MVVM.View
         public HomeView()
         {
             InitializeComponent();
-        }
+        }       
     }
 }

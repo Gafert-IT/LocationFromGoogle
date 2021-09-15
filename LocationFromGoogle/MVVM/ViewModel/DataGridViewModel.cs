@@ -17,14 +17,14 @@ namespace LocationFromGoogle.MVVM.ViewModel
             get { return _TLO_List; }
             set
             {
-                _TLO_List = value;
                 OnPropertyChanged();
+                _TLO_List = value;
             }
         }
         public DataGridViewModel()
         {
-            var query = DeSerializer.GetDataListFromJsonFile();
-            TLO_List = query;
+            var JsonData = DeSerializer.GetDataListFromJsonFile();
+            TLO_List = JsonData;
         }
     }
 }

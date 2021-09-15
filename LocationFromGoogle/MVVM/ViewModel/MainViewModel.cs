@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Input;
 using LocationFromGoogle.Core;
 
 namespace LocationFromGoogle.MVVM.ViewModel
@@ -25,8 +26,8 @@ namespace LocationFromGoogle.MVVM.ViewModel
 
         public MainViewModel()
         {
-            HomeVM = new();
-            DataGridVM = new();
+            HomeVM = new HomeViewModel();
+            DataGridVM = new DataGridViewModel();
 
             CurrentView = HomeVM;
 
@@ -39,6 +40,6 @@ namespace LocationFromGoogle.MVVM.ViewModel
             {
                 CurrentView = DataGridVM;
             });
-        }
+        }        
     }
 }
