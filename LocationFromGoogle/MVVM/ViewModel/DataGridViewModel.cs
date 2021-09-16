@@ -29,7 +29,7 @@ namespace LocationFromGoogle.MVVM.ViewModel
             JsonData = DeSerializer.GetDataListFromJsonFile();
 
             var query = JsonData.Where((x) => x.PlaceVisit != null
-                                           && x.ActivitySegment != null)                                           
+                                           && x.ActivitySegment != null)
                                 .Select((x) => x);
 
             TLO_List = query.ToList();
@@ -40,13 +40,13 @@ namespace LocationFromGoogle.MVVM.ViewModel
         public DateTime SelectedDateFrom
         {
             get { return _selectedDateFrom; }
-            set 
-            {                
+            set
+            {
                 _selectedDateFrom = value;
                 OnPropertyChanged();
             }
-        }
-        private DateTime _selectedDateUntil = new DateTime(2016,08,31);
+        } 
+        private DateTime _selectedDateUntil = DateTime.Now;
         public DateTime SelectedDateUntil
         {
             get { return _selectedDateUntil; }
@@ -60,8 +60,8 @@ namespace LocationFromGoogle.MVVM.ViewModel
         // Button Commands
         public ICommand BTN_SelectDate => new RelayCommand(PerformSelect);
         private void PerformSelect(object commandParameter)
-        {     
-            var query = JsonData.Where((x) => x.PlaceVisit != null 
+        {
+            var query = JsonData.Where((x) => x.PlaceVisit != null
                                            && x.ActivitySegment != null
                                            && x.PlaceVisit.Duration.StartTimestampDT > SelectedDateFrom
                                            && x.PlaceVisit.Duration.StartTimestampDT < SelectedDateUntil)

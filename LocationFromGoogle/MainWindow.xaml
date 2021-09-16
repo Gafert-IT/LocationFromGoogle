@@ -59,7 +59,7 @@
                              IsChecked="True"
                              Command="{Binding HomeViewCommand}"/>
 
-                <RadioButton Content="DataGrid"
+                <RadioButton Content="Overview"
                              Height="50"
                              Foreground="White"
                              FontSize="14"

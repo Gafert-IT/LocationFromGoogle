@@ -2,11 +2,83 @@
 using System.IO;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Windows;
+using System;
+using System.Diagnostics;
 
 namespace LocationFromGoogle
 {
     internal class DeSerializer
     {
+        internal static readonly string selection = @".\LocationHistory";
+        private static List<string> fileNames = new();
+        private static List<string> folders = new();
+
+        public static void Process(string selection)
+        {
+            if (File.Exists(selection))
+            {
+                // This path is a file
+                ProcessFile(selection);
+            }
+            else if (Directory.Exists(selection))
+            {
+                // This path is a directory
+                ProcessDirectory(selection);
+            }
+            else
+            {
+                MessageBox.Show("{0} is not a valid file or directory.", selection);
+            }
+        }
+
+        // Process all files in the directory passed in, recurse on any directories
+        // that are found, and process the files they contain.
+        private static void ProcessDirectory(string targetDirectory)
+        {
+
+
+
+
+
+
+
+
+
+            // Process the list of files found in the directory.
+            string[] fileEntries = Directory.GetFiles(targetDirectory);
+            foreach (string fileName in fileEntries)
+                ProcessFile(fileName);
+
+            // Recurse into subdirectories of this directory.
+            string[] subdirectoryEntries = Directory.GetDirectories(targetDirectory);
+            foreach (string subdirectory in subdirectoryEntries)
+                ProcessDirectory(subdirectory);
+        }
+
+        // Insert logic for processing found files here.
+        private static void ProcessFile(string path)
+        {
+            Debug.WriteLine("Processed file '{0}'.", path);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         internal static readonly string filePath = @"D:\Visual Studio Projekte\LocationFromGoogle\LocationFromGoogle\LocationHistory\2016\2016_AUGUST.json";
         private static string? jsonString;
         private static TimelineObjectCollection? timeLineObjCollection;
