@@ -42,7 +42,7 @@
                             HorizontalAlignment="Right"
                             VerticalAlignment="Center"
                             DisplayDateStart="2016,08,01"
-                            DisplayDateEnd="2016,08,31"
+                            DisplayDateEnd="2021,12,31"
                             DisplayDate="2016,08,01"
                             SelectedDate="{Binding Path=SelectedDateFrom, Mode=TwoWay}"/>
 
@@ -53,8 +53,8 @@
                             HorizontalAlignment="Right"
                             VerticalAlignment="Center"                        
                             DisplayDateStart="2016,08,01"
-                            DisplayDateEnd="2016,08,31"
-                            DisplayDate="2016,08,31"
+                            DisplayDateEnd="2021,12,31"
+                            DisplayDate="2021,12,31"
                             SelectedDate="{Binding Path=SelectedDateUntil, Mode=TwoWay}"/>
 
                 <Button Height="25"

@@ -10,83 +10,63 @@ namespace LocationFromGoogle
 {
     internal class DeSerializer
     {
-        internal static readonly string selection = @".\LocationHistory";
+        //internal static readonly string selection = @".\LocationHistory";
         private static List<string> fileNames = new();
-        private static List<string> folders = new();
+        private static Queue<string> folders = new();
 
-        public static void Process(string selection)
+        public static List<TimelineObject> Process(string selection)
         {
             if (File.Exists(selection))
             {
-                // This path is a file
                 ProcessFile(selection);
             }
             else if (Directory.Exists(selection))
             {
-                // This path is a directory
                 ProcessDirectory(selection);
+
+                // Process al Files found in all directories found
+                foreach (string filePath in fileNames)
+                    timeLineObjCollectionList = GetDataListFromJsonFile(filePath);
+
+                
             }
             else
             {
                 MessageBox.Show("{0} is not a valid file or directory.", selection);
             }
+            return timeLineObjCollectionList;
         }
 
-        // Process all files in the directory passed in, recurse on any directories
-        // that are found, and process the files they contain.
         private static void ProcessDirectory(string targetDirectory)
         {
-
-
-
-
-
-
-
-
-
-            // Process the list of files found in the directory.
+            // Add all Filepaths to files List found in this directory.
             string[] fileEntries = Directory.GetFiles(targetDirectory);
-            foreach (string fileName in fileEntries)
-                ProcessFile(fileName);
+            foreach (string file in fileEntries)
+                fileNames.Add(file);
 
-            // Recurse into subdirectories of this directory.
+            // Recurse into all subdirectories process them.
             string[] subdirectoryEntries = Directory.GetDirectories(targetDirectory);
             foreach (string subdirectory in subdirectoryEntries)
-                ProcessDirectory(subdirectory);
+                folders.Enqueue(subdirectory);
+            while (folders.Count > 0)
+            {
+                ProcessDirectory(folders.Dequeue());
+            }
         }
 
-        // Insert logic for processing found files here.
         private static void ProcessFile(string path)
         {
             Debug.WriteLine("Processed file '{0}'.", path);
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        internal static readonly string filePath = @".\LocationHistory\2016\2016_AUGUST.json";
+        //internal static readonly string filePath = @".\LocationHistory\2016\2016_AUGUST.json";
         private static string? jsonString;
         private static TimelineObjectCollection? timeLineObjCollection;
         private static List<TimelineObject>? timeLineObjCollectionList;
 
         //static TSToDTDelegate toDT = Duration.UnixTimeStampToDateTime;
 
-        internal static List<TimelineObject> GetDataListFromJsonFile()
+        internal static List<TimelineObject> GetDataListFromJsonFile(string filePath)
         {
             jsonString = ReadJsonFile(filePath);
             timeLineObjCollection = DeSerializeJsonString(jsonString);
@@ -124,12 +104,15 @@ namespace LocationFromGoogle
             List<TimelineObject>? tlol = new();
             if (timeLineObjCollection != null)
             {
-                for (int i = 0; i < timeLineObjCollection.TimelineObjects.Count; i++)
+                for (int i = 1; i < timeLineObjCollection.TimelineObjects.Count; i++)
                 {
-                    if (timeLineObjCollection.TimelineObjects[i].ActivitySegment != null)
+                    if (timeLineObjCollection.TimelineObjects[i-1].ActivitySegment != null)
                     {
-                        timeLineObjCollection.TimelineObjects[i].PlaceVisit = timeLineObjCollection.TimelineObjects[i + 1].PlaceVisit;
-                        tlol.Add(timeLineObjCollection.TimelineObjects[i]);
+                        if (timeLineObjCollection.TimelineObjects[i].ActivitySegment == null)
+                        {
+                            timeLineObjCollection.TimelineObjects[i-1].PlaceVisit = timeLineObjCollection.TimelineObjects[i].PlaceVisit;
+                        }
+                        tlol.Add(timeLineObjCollection.TimelineObjects[i-1]);
                     }
                 }
             }

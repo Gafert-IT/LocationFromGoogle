@@ -14,6 +14,7 @@ namespace LocationFromGoogle.MVVM.ViewModel
     {
         private IEnumerable<TimelineObject> _TLO_List;
         private IEnumerable<TimelineObject> JsonData;
+        private static readonly string selection = @".\LocationHistory";
 
         public IEnumerable<TimelineObject> TLO_List
         {
@@ -26,7 +27,7 @@ namespace LocationFromGoogle.MVVM.ViewModel
         }
         public DataGridViewModel()
         {
-            JsonData = DeSerializer.GetDataListFromJsonFile();
+            JsonData = DeSerializer.Process(selection);
 
             var query = JsonData.Where((x) => x.PlaceVisit != null
                                            && x.ActivitySegment != null)

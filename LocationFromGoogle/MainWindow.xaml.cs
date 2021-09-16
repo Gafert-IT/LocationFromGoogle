@@ -28,7 +28,7 @@ namespace LocationFromGoogle
         {
             InitializeComponent();
 
-            //DeSerializer.Process(@".\LocationHistory");
+            DeSerializer.Process(@".\LocationHistory");
         }
     }
 }
