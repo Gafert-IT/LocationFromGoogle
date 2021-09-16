@@ -132,6 +132,7 @@
                         <DataGridTextColumn Header=" Date" 
                                             Width="67.5"
                                             IsReadOnly="True"
+                                            SortDirection="Ascending"
                                             Binding="{Binding PlaceVisit.Duration.StartTimestampDT, StringFormat=\{00:dd.MM.yyyy\}}"/>
                         <DataGridTextColumn Header=" from" 
                                             Width="37.5"

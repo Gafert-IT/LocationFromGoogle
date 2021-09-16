@@ -47,7 +47,7 @@
 
   <ItemGroup>
     <None Update="LocationHistory\2016\2016_AUGUST.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
     <None Update="LocationHistory\2016\2016_DECEMBER.json">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
@@ -68,16 +68,16 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
     <None Update="LocationHistory\2017\2017_APRIL.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
     <None Update="LocationHistory\2018\2018_APRIL.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
     <None Update="LocationHistory\2019\2019_APRIL.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
     <None Update="LocationHistory\2020\2020_APRIL.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
     <None Update="LocationHistory\2021\2021_APRIL.json">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
