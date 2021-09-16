@@ -30,10 +30,10 @@ namespace LocationFromGoogle
 
                 
             }
-            else
-            {
-                MessageBox.Show("{0} is not a valid file or directory.", selection);
-            }
+            //else
+            //{
+            //    MessageBox.Show("{0} is not a valid file or directory.", selection);
+            //}
             return timeLineObjCollectionList;
         }
 

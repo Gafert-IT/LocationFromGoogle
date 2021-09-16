@@ -50,7 +50,7 @@
                            Margin="10,0,0,0"/>
             </StackPanel>
 
-            <StackPanel Grid.Row="1">
+            <StackPanel Grid.Row="1" VerticalAlignment="Top">
                 <RadioButton Content="Home"
                              Height="50"
                              Foreground="White"
@@ -71,6 +71,15 @@
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" VerticalAlignment="Bottom">
+                <RadioButton Content="Quit"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding QuitCommand}"
+                             CommandParameter="{Binding ElementName=mainWindow}"/>
             </StackPanel>
 
             <TextBox Width="250"

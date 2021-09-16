@@ -14,7 +14,7 @@ namespace LocationFromGoogle.MVVM.ViewModel
     {
         private IEnumerable<TimelineObject> _TLO_List;
         private IEnumerable<TimelineObject> JsonData;
-        private static readonly string selection = @".\LocationHistory";
+        private static readonly string selection = @"D:\Visual Studio Projekte\LocationFromGoogle\LocationFromGoogle\LocationHistory\";
 
         public IEnumerable<TimelineObject> TLO_List
         {

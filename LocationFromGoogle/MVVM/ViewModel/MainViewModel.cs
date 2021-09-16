@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Input;
+using System.Windows;
 using LocationFromGoogle.Core;
 
 namespace LocationFromGoogle.MVVM.ViewModel
@@ -8,6 +9,7 @@ namespace LocationFromGoogle.MVVM.ViewModel
     {
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand DataGridViewCommand { get; set; }
+        public RelayCommand QuitCommand { get; set; }
 
         public HomeViewModel HomeVM { get; set; }
         public DataGridViewModel DataGridVM { get; set; }
@@ -39,6 +41,11 @@ namespace LocationFromGoogle.MVVM.ViewModel
             DataGridViewCommand = new RelayCommand(o =>
             {
                 CurrentView = DataGridVM;
+            });
+
+            QuitCommand = new RelayCommand(o =>
+            {
+               Application.Current.Shutdown();
             });
         }        
     }
