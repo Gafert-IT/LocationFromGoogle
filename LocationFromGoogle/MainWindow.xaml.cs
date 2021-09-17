@@ -17,6 +17,18 @@ using LocationFromGoogle.MVVM.ViewModel;
 using LocationFromGoogle.MVVM.View;
 using LocationFromGoogle.Core;
 
+/***************************************************************************************
+*    Title: Google Maps Location Tool
+*    Author: Mike Gafert
+*    Contributors:
+*    Date: 17.09.2021
+*    Time: 11:00
+*    Code version: 0.1.1.27
+*    Availability: https://github.com/Gafert-IT/LocationFromGoogle
+*    License: GNU General Public License v3.0
+*
+***************************************************************************************/
+
 namespace LocationFromGoogle
 {
     /// <summary>
