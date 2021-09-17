@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:LocationFromGoogle.MVVM.View"
              xmlns:viewModel="clr-namespace:LocationFromGoogle.MVVM.ViewModel"  
              xmlns:core="clr-namespace:LocationFromGoogle.Core"
+             xmlns:fa="http://schemas.fontawesome.io/icons/"
              mc:Ignorable="d" 
              d:DataContext="{d:DesignInstance Type=viewModel:DataGridViewModel}"
              d:DesignHeight="525" d:DesignWidth="700">
@@ -18,7 +19,7 @@
     <StackPanel>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="125"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
@@ -34,11 +35,23 @@
                        Margin="0,0,0,10"
                        FontFamily="/Fonts/#ProductSans"/>
 
-            <StackPanel Orientation="Horizontal" Grid.Column="1">
+            <StackPanel Orientation="Horizontal" 
+                        HorizontalAlignment="Right"
+                        Grid.Column="1"
+                        Width="575">
+
+                <Button Height="25"
+                        Width="75"
+                        Margin="10,0,1,10"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Content="{Binding ButtonLoadText}"                    
+                        Command="{Binding BTN_LoadData}"/>
+
                 <DatePicker x:Name="FromDate" 
                             Height="25"
-                            Width="150"
-                            Margin="20,0,1,10" 
+                            Width="110"
+                            Margin="10,0,1,10" 
                             HorizontalAlignment="Right"
                             VerticalAlignment="Center"
                             DisplayDateStart="2016,08,01"
@@ -48,7 +61,7 @@
 
                 <DatePicker x:Name="UntilDate" 
                             Height="25"
-                            Width="150"
+                            Width="110"
                             Margin="1,0,1,10"
                             HorizontalAlignment="Right"
                             VerticalAlignment="Center"                        
@@ -59,7 +72,7 @@
 
                 <Button Height="25"
                         Width="75"
-                        Margin="10,0,1,10"
+                        Margin="1,0,1,10"
                         HorizontalAlignment="Right"
                         VerticalAlignment="Center"
                         Content="Select"                    
@@ -74,96 +87,102 @@
                         Command="{Binding BTN_Reset}"/>
             </StackPanel>
         </Grid>
+        <Grid>
+            <Border Width="690"
+                    Height="450"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0"
+                                         EndPoint="1,2">
+                        <GradientStop Color="#609BEB" Offset="0.0"/>
+                        <GradientStop Color="#1A73E8" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
 
-        <Border Width="690"
-                Height="450"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Top">
-            <Border.Background>
-                <LinearGradientBrush StartPoint="0,0"
-                                     EndPoint="1,2">
-                    <GradientStop Color="#609BEB" Offset="0.0"/>
-                    <GradientStop Color="#1A73E8" Offset="1"/>
-                </LinearGradientBrush>
-            </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,690,450"/>
+                </Border.Clip>
 
-            <Border.Clip>
-                <RectangleGeometry RadiusX="10"
-                                   RadiusY="10"
-                                   Rect="0,0,690,450"/>
-            </Border.Clip>
+                <Border CornerRadius="10"
+                        BorderThickness="1"
+                        BorderBrush="Black"
+                        Margin="10"
+                        Padding="0">
 
-            <Border CornerRadius="10"
-                    BorderThickness="1"
-                    BorderBrush="Black"
-                    Margin="10"
-                    Padding="0">
+                    <DataGrid x:Name="DTG_Locations"      
+                              ItemsSource="{Binding TLO_List}"
+                              AutoGenerateColumns="false"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Top"
+                              Margin="0,0,1,1"
+                              Width="670"
+                              Height="430"
+                              Background="Transparent"
+                              RowBackground="Transparent"
+                              BorderThickness="1"
+                              BorderBrush="Transparent"
+                              VerticalScrollBarVisibility="Hidden">
 
-                <DataGrid x:Name="DTG_Locations"      
-                      ItemsSource="{Binding TLO_List}"
-                      AutoGenerateColumns="false"
-                      HorizontalAlignment="Left"
-                      VerticalAlignment="Top"
-                      Margin="0,0,1,1"
-                      Width="670"
-                      Height="430"
-                      Background="Transparent"
-                      RowBackground="Transparent"
-                      BorderThickness="1"
-                      BorderBrush="Transparent"
-                      VerticalScrollBarVisibility="Hidden">
+                        <DataGrid.ColumnHeaderStyle>
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                                <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                                <Setter Property="BorderBrush" Value="Black"/>
+                            </Style>
+                        </DataGrid.ColumnHeaderStyle>
 
-                    <DataGrid.ColumnHeaderStyle>
-                        <Style TargetType="{x:Type DataGridColumnHeader}">
-                            <Setter Property="Background" Value="Transparent"/>
-                            <Setter Property="FontWeight" Value="Bold"/>
-                            <Setter Property="BorderThickness" Value="0,0,1,1"/>
-                            <Setter Property="BorderBrush" Value="Black"/>
-                        </Style>
-                    </DataGrid.ColumnHeaderStyle>
+                        <DataGrid.RowHeaderStyle>
+                            <Style TargetType="{x:Type DataGridRowHeader}">
+                                <Setter Property="Background" Value="Transparent"/>
+                            </Style>
+                        </DataGrid.RowHeaderStyle>
 
-                    <DataGrid.RowHeaderStyle>
-                        <Style TargetType="{x:Type DataGridRowHeader}">
-                            <Setter Property="Background" Value="Transparent"/>
-                        </Style>
-                    </DataGrid.RowHeaderStyle>
-
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header=" Date" 
-                                            Width="67.5"
-                                            IsReadOnly="True"
-                                            SortDirection="Ascending"
-                                            Binding="{Binding PlaceVisit.Duration.StartTimestampDT, StringFormat=\{00:dd.MM.yyyy\}}"/>
-                        <DataGridTextColumn Header=" from" 
-                                            Width="37.5"
-                                            IsReadOnly="True"
-                                            Binding="{Binding PlaceVisit.Duration.StartTimestampDT, StringFormat=\{00:HH:mm\}}"/>
-                        <DataGridTextColumn Header=" until" 
-                                            Width="37.5"
-                                            IsReadOnly="True"
-                                            Binding="{Binding PlaceVisit.Duration.EndTimestampDT, StringFormat=\{00:HH:mm\}}"/>
-                        <DataGridTextColumn Header=" Place Visited" 
-                                            Width="150"                                            
-                                            Binding="{Binding PlaceVisit.Location.Name}">
-                            <DataGridTextColumn.ElementStyle>
-                                <Style>
-                                    <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-                                </Style>
-                            </DataGridTextColumn.ElementStyle>
-                        </DataGridTextColumn>
-                        <DataGridTextColumn Header=" Address" 
-                                            Width="150"
-                                            Binding="{Binding PlaceVisit.Location.Address}">
-                            <DataGridTextColumn.ElementStyle>
-                                <Style>
-                                    <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-                                </Style>
-                            </DataGridTextColumn.ElementStyle>
-                        </DataGridTextColumn>
-                    </DataGrid.Columns>
-                </DataGrid>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header=" Date" 
+                                                Width="67.5"
+                                                IsReadOnly="True"
+                                                SortDirection="Ascending"
+                                                Binding="{Binding PlaceVisit.Duration.StartTimestampDT, StringFormat=\{00:dd.MM.yyyy\}}"/>
+                            <DataGridTextColumn Header=" from" 
+                                                Width="37.5"
+                                                IsReadOnly="True"
+                                                Binding="{Binding PlaceVisit.Duration.StartTimestampDT, StringFormat=\{00:HH:mm\}}"/>
+                            <DataGridTextColumn Header=" until" 
+                                                Width="37.5"
+                                                IsReadOnly="True"
+                                                Binding="{Binding PlaceVisit.Duration.EndTimestampDT, StringFormat=\{00:HH:mm\}}"/>
+                            <DataGridTextColumn Header=" Place Visited" 
+                                                Width="150"
+                                                Binding="{Binding PlaceVisit.Location.Name}">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style>
+                                        <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header=" Address" 
+                                                Width="150"
+                                                Binding="{Binding PlaceVisit.Location.Address}">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style>
+                                        <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Border>
             </Border>
-        </Border>
-
+            <fa:ImageAwesome Icon="Spinner" 
+                             x:Name="Spinner"
+                             Spin="True" 
+                             Height="50" 
+                             Width="50"
+                             Visibility="{Binding Spinner, UpdateSourceTrigger=PropertyChanged}"/>
+        </Grid>
     </StackPanel>
 </UserControl>   

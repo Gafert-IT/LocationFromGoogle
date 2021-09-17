@@ -36,7 +36,7 @@ namespace LocationFromGoogle.MVVM.ViewModel
             HomeViewCommand = new RelayCommand(o => 
             {
                 CurrentView = HomeVM;
-            });
+            });           
 
             DataGridViewCommand = new RelayCommand(o =>
             {
