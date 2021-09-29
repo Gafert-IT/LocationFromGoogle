@@ -19,12 +19,12 @@
     <StackPanel>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="125"/>
+                <ColumnDefinition Width="auto"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>                
             </Grid.RowDefinitions>
 
             <TextBlock Text="Overview"
@@ -37,7 +37,7 @@
 
             <StackPanel Orientation="Horizontal" 
                         HorizontalAlignment="Right"
-                        Grid.Column="1"
+                        Grid.Column="1"                        
                         Width="575">
 
                 <Button Height="25"

@@ -32,8 +32,11 @@ namespace LocationFromGoogle.MVVM.ViewModel
         public DataGridViewModel()
         {
             if (!Directory.Exists(dataFolderPath))
-                Directory.CreateDirectory(dataFolderPath); // Falls er nicht existiert, erstellen            
+                Directory.CreateDirectory(dataFolderPath); // Falls er nicht existiert, erstellen
+
+            LoadSampleData();
         }
+
 
         // DatePicker
         private DateTime _selectedDateFrom = new DateTime(2016, 08, 01);
@@ -132,6 +135,17 @@ namespace LocationFromGoogle.MVVM.ViewModel
                 _spinner = value;
                 OnPropertyChanged();
             }
+        }
+        private void LoadSampleData()
+        {
+            _JsonData = DeSerializer.Process(@".\SampleData\");
+
+            var query = _JsonData.Where(x => x.PlaceVisit != null
+                                          && x.ActivitySegment != null)
+                                 .Select(x => x)
+                                 .OrderBy(x => x.ActivitySegment.Duration.StartTimestampDT.Date);
+
+            TLO_List = query.ToList();
         }
     }
 }
